@@ -11,6 +11,7 @@ body {
 body,
 html {
 	height: 100%;
+	direction: rtl;
 }
 .nav .open > a {
   background-color: transparent;
@@ -28,19 +29,19 @@ html {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  padding-left: 0;
+  padding-right: 0;
   transition: all 0.5s ease;
 }
 #wrapper.toggled {
-  padding-left: 220px;
+  padding-right: 220px;
 }
 #wrapper.toggled #sidebar-wrapper {
 	width: 220px;
 	/*z-index: auto;*/
 }
 #wrapper.toggled #page-content-wrapper {
-  margin-right: -220px;
-  position: absolute;
+  margin-left: -220px;
+  position: relative;
 }
 #sidebar-wrapper {
   -moz-transition: all 0.5s ease;
@@ -48,8 +49,8 @@ html {
   -webkit-transition: all 0.5s ease;
   background: #1a1a1a;
   height: 100%;
-  right: 0px;
-  margin-right: -220px;
+  left: 0px;
+  margin-left: -220px;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all 0.5s ease;
@@ -62,6 +63,7 @@ html {
 #page-content-wrapper {
   padding-top: 70px;
   width: 100%;
+  direction:rtl;
 }
 /*-------------------------------*/
 /*     Sidebar nav styles        */
@@ -389,5 +391,4 @@ body a:hover {
 #right {
 	float: right;
 	margin-right: 70px;
-	right: 0;
 }
