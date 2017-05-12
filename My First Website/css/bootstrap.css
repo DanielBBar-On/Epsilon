@@ -6612,8 +6612,9 @@ button.close {
 /*spacespacespacespacespacespacespacespacespacespace*/
 
 #index_body {
-        background:url(../images/general/books-wallpaper-24.jpg) no-repeat fixed;
-        background-size: cover}
+	background:url(../images/general/books-wallpaper-24.jpg) no-repeat fixed;
+	background-size: cover
+}
 /*.dropdown-submenu {
 	direction: rtl;
     position: relative;

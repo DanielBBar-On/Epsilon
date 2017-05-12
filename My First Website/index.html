@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ><!-- InstanceBegin template="/Templates/sidebar.dwt" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/sidebar.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
   <meta charset="UTF-8">
   <!-- InstanceBeginEditable name="doctitle" -->
@@ -9,14 +9,14 @@
   <!<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet prefetch" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/sidebar_style.css">
+  <link href="css/flat_ui.min.css" rel="stylesheet" type="text/css">
   <!-- InstanceBeginEditable name="head" -->
   <!-- InstanceEndEditable -->
 </head>
 
 <body>
       <div id="wrapper">
-        <div class="overlay"></div>
-    
+      <div class="overlay"></div>
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
@@ -34,16 +34,16 @@
                  <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> הרצאות <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
+                    <li id="hidden"></li>
                     <li><a href="#">הרצאה 1</a></li>
                     <li><a href="#">הרצאה 2</a></li>
                     <li><a href="#">הרצאה 3</a></li>
                   </ul>
                 </li>
                  <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> תרגולים <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" dir="rtl"><i class="fa fa-fw fa-plus"></i> תרגולים <span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-right" role="menu" dir="rtl">
+                    <li id="hidden"></li>
                     <li><a href="#">תרגול 1</a></li>
                     <li><a href="#">תרגול 2</a></li>
                     <li><a href="#">תרגול 3</a></li>
@@ -52,11 +52,13 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> מבחנים <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header"></li>
-                    <li class="dropdown-menu dropdown-submenu"><a href="#">אביב 2017</a>
-                    	<ul class="dropdown-menu">
-                        				<li><a href="#">3rd level</a></li>
-                    					<li><a href="#">3rd level</a></li>
+                    <li id="hidden"></li>
+                    <li class="dropdown-submenu" role="menu"><a class="second" tabindex="-1" href="#">אביב 2017<span class="caret"></span></a>
+                    	<ul class="dropdown-submenu" role="menu">
+                        				<li id="hidden"></li>
+                        				<li><a href="#">מועד א'</a></li>
+                    					<li><a href="#">מועד ב'</a></li>
+                                        <li><a href="#">מועד ג'</a></li>
                   					</ul>
                     </li>
                     <li><a href="#">חורף 2016-2017</a></li>
@@ -79,7 +81,7 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+          <button type="button" class="hamburger is-closed animated fadeInRight" data-toggle="offcanvas">
             <span class="hamb-top"></span>
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
