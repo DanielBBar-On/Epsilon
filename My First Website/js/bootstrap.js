@@ -2353,7 +2353,7 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
-
+/* Second level menu */
 $(document).ready(function(){
   $('.dropdown-submenu a.second').on("click", function(e){
     $(this).next('ul').toggle();
@@ -2362,5 +2362,21 @@ $(document).ready(function(){
   });
 });
 
-}(jQuery);
+/* Show-Hide Button*/
 
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+jQuery(document).ready(function(){
+    jQuery('#hideshow').live('click', function(event) {        
+         jQuery('#content').toggle('show');
+    });
+});
+
+}(jQuery);
