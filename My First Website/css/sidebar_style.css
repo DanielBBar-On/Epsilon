@@ -170,13 +170,15 @@ html {
 	background-color: transparent;
 	color: #ffffff;
 	text-decoration: none;
-	text-align: right;
-}
+	}
+	
 .sidebar-nav > .sidebar-brand {
   font-size: 20px;
   height: 65px;
   line-height: 44px;
+  text-align: left;
 }
+
 /*submenu*/
   .dropdown-submenu {
     position: relative;
