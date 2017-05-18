@@ -5,6 +5,8 @@
   <!-- InstanceBeginEditable name="doctitle" -->
   <link rel="stylesheet" href="css/iFrame/iframe_style.css">
   <link rel="stylesheet" href="css/showHide/showHide_style.css">
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/forum/forum_style.css">
   <title>Awesome Bootstrap 3 Sidebar Navigation</title>
   <!-- InstanceEndEditable -->
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -96,7 +98,7 @@
       <body id="index_body">
       <div class="row">
   <div class="col-md-6" id="content">
-<div id="target" style="margin-top:50px;">
+<div id="target">
   	<!-- responsive iframe --> 
 <!-- ============== -->
 
@@ -112,7 +114,7 @@ An &#105;frame should be displayed here but your browser version does not suppor
 </div>
   </div>
   </div>
-  <div class="col-md-12" id="question" style="float:right;">
+  <div class="col-md-12" id="question" style="float:right;" align="center">
   <script type="text/javascript">
     function hasClass(ele,cls) {
      return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
@@ -141,16 +143,40 @@ An &#105;frame should be displayed here but your brow	ser version does not suppo
     </iframe>
   </div>
 </div>
-  </div>
-</div>
- <div align="center">
-       <button class="btn btn-default2 Show" id="hideshow" value="hide/show" onClick="changeClass()" >הצג פתרון</button>
+       <button class="btn btn-default2 Show" id="hideshow" value="hide/show" onClick="changeClass()">הצג פתרון</button>
 	<button class="btn btn-default2 Hide" id="hideshow"value="hide/show" onClick="changeClass()" style="display:none;">הסתר פתרון</button>
   </div>
+</div>
+  </div>
+  <div class="vue-wrapper">
+  <div id="vue">
+    <div class="search-area">
+      <h1>Questions and Answers</h1>
+      <div class="input-wrapper">
+        <i class="fa fa-search"></i>
+        <input v-model="searchString" type="text" placeholder="Have a question? Search for answers with keywords"/>
+      </div>
+      <button @click="resetSearch()">Reset</button>
+    </div>
+
+    <div class="question" v-for="question in questions | filterBy searchString" track-by="$index" data-color="{{ question.votes | voteColor }}">
+      <div class="votes">
+        <div class="upvote" @click="vote('up', question)"></div>
+        <div class="number-of-votes">{{ question.votes }}</div>
+        <div class="downvote" @click="vote('down', question)"></div>
+      </div>
+
+      <div class="question-and-answer">
+        <h2>{{ question.question }}</h2>
+        <p>{{ question.answer }}</p>
+      </div>
+    </div>
 
  
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/showHide/showHide_index.js"></script>
+  <script src="js/showHide/showHide_index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.21/vue.js"></script>
+  <script src="js/forum/forum.js"></script>
       </body>
       <!-- InstanceEndEditable -->
     <!-- /#wrapper -->
