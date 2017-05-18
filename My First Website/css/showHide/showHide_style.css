@@ -1,0 +1,15 @@
+body {padding:0px;}
+
+#target {
+  background:none;
+  width: auto;
+  height: auto;
+  height: auto;
+  padding:5px;
+  display:none;
+}
+
+.Hide
+{
+  display:none;
+}
