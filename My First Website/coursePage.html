@@ -151,12 +151,12 @@ An &#105;frame should be displayed here but your brow	ser version does not suppo
   <div class="vue-wrapper">
   <div id="vue">
     <div class="search-area">
-      <h1>Questions and Answers</h1>
+      <h1>דיונים</h1>
       <div class="input-wrapper">
         <i class="fa fa-search"></i>
         <input v-model="searchString" type="text" placeholder="Have a question? Search for answers with keywords"/>
       </div>
-      <button @click="resetSearch()">Reset</button>
+      <button @click="resetSearch()">נקה</button>
     </div>
 
     <div class="question" v-for="question in questions | filterBy searchString" track-by="$index" data-color="{{ question.votes | voteColor }}">
@@ -167,8 +167,8 @@ An &#105;frame should be displayed here but your brow	ser version does not suppo
       </div>
 
       <div class="question-and-answer">
-        <h2>{{ question.question }}</h2>
-        <p>{{ question.answer }}</p>
+        <h2 style="color: #000000; direction: rtl;">{{ question.question }}</h2>
+        <p style="color: #000000; direction: rtl">{{ question.answer }}</p>
       </div>
     </div>
 
