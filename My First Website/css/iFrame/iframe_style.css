@@ -58,15 +58,16 @@ set-box-shadow-cicis-menu-to-go {
   max-width: 666.67px;
   max-height: 600px;
   overflow: inherit;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   position: relative;
 }
 
 #Iframe-Cicis-Menu-To-Go-Answer {
   max-width: 666.67px;
   max-height: 600px;
-  overflow: hidden;
-  position: inherit; 
+  overflow: inherit;
+  margin-bottom: 10px;
+  position: relative; 
 }
 
 /*
