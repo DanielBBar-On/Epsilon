@@ -14,7 +14,7 @@
   <!-- TemplateEndEditable -->
 </head>
 
-<body>
+<div>
       <div id="wrapper">
       <div class="overlay"></div>
         <!-- Sidebar -->
@@ -100,5 +100,5 @@
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery-1.11.2.min.js"></script>
 
-</body>
+</div>
 </html>
