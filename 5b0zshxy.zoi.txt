@@ -1,0 +1,21 @@
+﻿Change color of forum text
+
+Signed-off-by: DanielBBar-On <danielishome@gmail.com>
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch forum
+# Changes to be committed:
+#	modified:   My First Website/coursePage.html
+#	modified:   My First Website/css/showHide/showHide_style.css
+#
+# Changes not staged for commit:
+#	modified:   My First Website/js/bootstrap.js
+#
+# Untracked files:
+#	CodePens/content-creation-qa-feed.zip
+#	My First Website/css/forum/
+#	My First Website/js/forum/
+#	My First Website/scss/
+#
+
